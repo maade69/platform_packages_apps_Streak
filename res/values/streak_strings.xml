@@ -30,7 +30,7 @@
     <string name="network_category_header">Network</string>
     <string name="brightness_category_header">Brightness</string>
     <string name="batterystyles_category_header">Status bar Battery Styles</string>
-
+    <string name="dt2s_category_header">Double tap to sleep</string>
 
     <!-- About section -->
     <string name="links_category">Links</string>
@@ -281,4 +281,7 @@
     <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
     <string name="qs_battery_percentage_title">QS battery percentage</string>
     <string name="qs_battery_percentage_summary">Show battery percentage in the QS header instead of battery estimate</string>
+
+    <!-- AOSP Gestures -->
+    <string name="aosp_gesture_title">AOSP Gestures Settings</string>
 </resources>
