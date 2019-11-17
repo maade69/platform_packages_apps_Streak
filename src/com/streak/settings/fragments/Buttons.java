@@ -32,7 +32,7 @@ import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Buttons extends SettingsPreferenceFragment implements
+public class Buttons extends ActionFragment implements
         Preference.OnPreferenceChangeListener{
 
     //Keys
