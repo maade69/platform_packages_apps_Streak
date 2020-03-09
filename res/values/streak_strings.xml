@@ -28,7 +28,7 @@
     <string name="lockscreen_category_header">Lockscreen </string>
     <string name="notification_category_header">Notifications</string>
     <string name="network_category_header">Network</string>
-    <string name="brightness_category_header">Brightness</string>
+    <string name="qs_category_header">Quick Settings</string>
     <string name="batterystyles_category_header">Status bar Battery Styles</string>
     <string name="dt2s_category_header">Double tap to sleep</string>
 
@@ -284,4 +284,8 @@
 
     <!-- AOSP Gestures -->
     <string name="aosp_gesture_title">AOSP Gestures Settings</string>
+	
+    <!-- QS Panel Tint -->	
+    <string name="qs_bg_use_new_tint">QS tile colors</string>
+    <string name="qs_bg_use_new_tint_summary">Use accent color for qs tile icons and background</string>
 </resources>

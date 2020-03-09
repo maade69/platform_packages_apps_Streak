@@ -58,19 +58,6 @@
             settings:units="" />
 
     </PreferenceCategory>
-
-    <PreferenceCategory
-         android:key="brightness_category"
-         android:title="@string/brightness_category_header" >
-
-        <com.streak.settings.preferences.SystemSettingMasterSwitchPreference
-            android:key="qs_show_brightness"
-            android:title="@string/qs_show_brightness_title"
-            android:summary="@string/qs_show_brightness_summary"
-            android:fragment="com.streak.settings.fragments.BrightnessSliderSettings"
-            android:defaultValue="true" />
-
-    </PreferenceCategory>
 	
     <PreferenceCategory
          android:key="batterystyles_category"
@@ -82,6 +69,25 @@
         android:summary="@string/battery_percent_summary"
         android:fragment="com.streak.settings.fragments.StatusBarBatterySettings"/>
 		
+    </PreferenceCategory>
+
+    <PreferenceCategory
+         android:key="qs_category"
+         android:title="@string/qs_category_header" >
+
+	    <com.streak.settings.preferences.SystemSettingSwitchPreference
+        android:key="qs_panel_bg_use_new_tint"
+        android:title="@string/qs_bg_use_new_tint"
+        android:summary="@string/qs_bg_use_new_tint_summary"
+        android:defaultValue="true" />
+
+        <com.streak.settings.preferences.SystemSettingMasterSwitchPreference
+            android:key="qs_show_brightness"
+            android:title="@string/qs_show_brightness_title"
+            android:summary="@string/qs_show_brightness_summary"
+            android:fragment="com.streak.settings.fragments.BrightnessSliderSettings"
+            android:defaultValue="true" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
