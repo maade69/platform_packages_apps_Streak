@@ -51,4 +51,8 @@
     <string name="vowifi_icon_enabled">VoWiFi icon enabled</string>
     <string name="vowifi_icon_disabled">VoWiFi icon disabled</string>
     <string name="vowifi_icon_enabled_volte_disabled">VoWiFi instead of VoLTE icon</string>
+
+    <!-- Show VoLTE icon on statusbar -->
+    <string name="volte_icon_title">VoLTE icon</string>
+    <string name="volte_icon_summary">Display VoLTE icon</string>
 </resources>
