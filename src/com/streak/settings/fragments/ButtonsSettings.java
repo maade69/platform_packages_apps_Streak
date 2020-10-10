@@ -18,13 +18,13 @@ import com.android.settings.SettingsPreferenceFragment;
 
 import com.android.internal.logging.nano.MetricsProto;
 
-public class ButtonSettings extends SettingsPreferenceFragment implements
+public class ButtonsSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener{
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.streak_settings_button);
+        addPreferencesFromResource(R.xml.streak_settings_buttons);
 
         final PreferenceScreen prefScreen = getPreferenceScreen();
     }

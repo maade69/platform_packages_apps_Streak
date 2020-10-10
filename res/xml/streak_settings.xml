@@ -34,16 +34,9 @@
         <!-- Buttons -->
         <Preference
             android:key="buttonsettings_category"
-            android:title="@string/button_title"
+            android:title="@string/buttons_title"
             android:fragment="com.streak.settings.fragments.ButtonSettings"
             android:icon="@drawable/ic_settings_buttons"/>
-
-        <!-- Navigation Bar -->
-        <Preference
-            android:key="navigationbar_category"
-            android:title="@string/navbar_title"
-            android:fragment="com.streak.settings.fragments.NavbarSettings"
-            android:icon="@drawable/ic_settings_navbar"/>
 
         <!-- Gestures -->
         <Preference
@@ -66,13 +59,6 @@
             android:fragment="com.streak.settings.fragments.PowerMenuSettings"
             android:icon="@drawable/ic_settings_powermenu"/>
 
-        <!-- Recents -->
-        <Preference
-            android:key="recents_category"
-            android:title="@string/recents_title"
-            android:fragment="com.streak.settings.fragments.RecentsSettings"
-            android:icon="@drawable/ic_settings_recents"/>
-
         <!-- Notifications -->
         <Preference
             android:key="notifications_category"
@@ -80,21 +66,11 @@
             android:fragment="com.streak.settings.fragments.NotificationSettings"
             android:icon="@drawable/ic_settings_notification"/>
 
-        <!-- Misc -->
+        <!-- About -->
         <Preference
-            android:key="misc_category"
-            android:title="@string/misc_title"
-            android:fragment="com.streak.settings.fragments.MiscSettings"
-            android:icon="@drawable/ic_settings_miscs"/>
+            android:key="about_category"
+            android:title="@string/about_title"
+            android:fragment="com.streak.settings.fragments.AboutSettings"
+            android:icon="@drawable/ic_settings_about"/>
 
-        <!-- Device Part -->
-        <Preference
-            android:key="device_part"
-            android:persistent="false"
-            android:title="@string/device_part_title"
-            android:icon="@drawable/ic_settings_device">
-            <intent android:action="android.intent.action.MAIN"
-                 android:targetPackage="org.omnirom.device"
-                 android:targetClass="org.omnirom.device.DeviceSettings"/>
-        </Preference>
 </PreferenceScreen>
