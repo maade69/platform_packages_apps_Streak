@@ -40,4 +40,17 @@
          android:entryValues="@array/vowifi_icon_values"
          android:summary="%s"/>
 
+    <com.streak.settings.preferences.SystemSettingSwitchPreference
+        android:key="network_traffic_state"
+        android:title="@string/network_traffic_state_title"
+        android:summary="@string/network_traffic_state_summary"
+        android:defaultValue="true" />
+
+    <com.streak.settings.preferences.CustomSeekBarPreference
+        android:key="network_traffic_autohide_threshold"
+        android:title="@string/network_traffic_autohide_threshold_title"
+        android:max="10"
+        settings:min="0"
+        settings:units="" />
+
 </PreferenceScreen>
