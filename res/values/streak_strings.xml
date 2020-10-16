@@ -84,4 +84,8 @@
     <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
     <string name="lockscreen_battery_info_summary">Display negociated charger max current and voltage and battery temperature on lockscreen while charging</string>
+
+    <!-- Notification guts kill app button -->
+    <string name="notification_guts_kill_app_button_title">Kill app button</string>
+    <string name="notification_guts_kill_app_button_summary">Show a kill app button in the notification\'s longpress menu</string>
 </resources>
