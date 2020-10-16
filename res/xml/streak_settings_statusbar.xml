@@ -59,4 +59,9 @@
         settings:min="0"
         settings:units="" />
 
+    <com.streak.settings.preferences.SystemSettingSwitchPreference
+        android:key="use_old_mobiletype"
+        android:title="@string/use_old_mobiletype_title"
+        android:summary="@string/use_old_mobiletype_summary"
+        android:defaultValue="true" />
 </PreferenceScreen>
