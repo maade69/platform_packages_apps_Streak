@@ -24,6 +24,17 @@
     <string name="statusbar_title">Status bar</string>
     <string name="notifications_title">Notifications</string>
 
+    <!-- About section -->
+    <string name="links_category">Links</string>
+    <string name="devs_category">Devs</string>
+    <string name="maintainers_category">Maintainers</string>
+    <string name="telegram_channel">News channel</string>
+    <string name="telegram_channel_summary">Telegram channel with our releases and new features!</string>
+    <string name="telegram_chat">Support chat</string>
+    <string name="telegram_chat_summary">Telegram chat with ROM support.</string>
+    <string name="donation_link">Donations</string>
+    <string name="donation_link_summary">Want to support us? Here you have a link to donation.</string>
+
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="reset">Reset</string>

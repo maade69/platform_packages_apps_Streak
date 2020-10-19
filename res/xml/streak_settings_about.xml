@@ -18,4 +18,94 @@
 	android:title="@string/about_title"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <PreferenceCategory
+        android:key="links_category"
+        android:title="@string/links_category" >
+
+        <Preference
+            android:title="@string/telegram_channel"
+            android:summary="@string/telegram_channel_summary"
+            android:icon="@drawable/telegram_icon">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/ProjectStreakOfficial"/>
+        </Preference>
+
+        <Preference
+            android:title="@string/telegram_chat"
+            android:summary="@string/telegram_chat_summary"
+            android:icon="@drawable/telegram_icon">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/ProjectStreak"/>
+        </Preference>
+
+        <Preference
+            android:title="@string/donation_link"
+            android:summary="@string/donation_link_summary"
+            android:icon="@drawable/donation_icon">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://www.paypal.me/HSgod02"/>
+        </Preference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="devs_category"
+        android:title="@string/devs_category" >
+
+        <Preference
+            android:title="HSgod"
+            android:summary="ROM Lead developer">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/HSgod02"/>
+        </Preference>
+
+        <Preference
+            android:title="Raaj52"
+            android:summary="ROM Developer">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/Raaj52"/>
+        </Preference>
+
+        <Preference
+            android:title="san9scurtu"
+            android:summary="Project Contributor">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/san9scurtu"/>
+        </Preference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="maintainers_category"
+        android:title="@string/maintainers_category" >
+
+        <Preference
+            android:title="HSgod/Raaj52"
+            android:summary="Xiaomi Mi 9T Pro maintainer">
+        </Preference>
+
+        <Preference
+            android:title="san9scurtu"
+            android:summary="Xiaomi Redmi 5 Plus maintainer">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/san9scurtu"/>
+        </Preference>
+
+        <Preference
+            android:title="VladV1V"
+            android:summary="Xiaomi Mi 10 maintainer">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/VladV1V"/>
+        </Preference>
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
