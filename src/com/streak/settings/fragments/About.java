@@ -29,10 +29,10 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-public class AboutSettings extends SettingsPreferenceFragment
+public class About extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
 
-    public static final String TAG = "AboutSettings";
+    public static final String TAG = "About";
 
     private ContentResolver mResolver;
 

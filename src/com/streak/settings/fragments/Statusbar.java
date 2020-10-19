@@ -36,7 +36,7 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Collections;
 
-public class StatusBarSettings extends SettingsPreferenceFragment implements
+public class Statusbar extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
     private CustomSeekBarPreference mThreshold;

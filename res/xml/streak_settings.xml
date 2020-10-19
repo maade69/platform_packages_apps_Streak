@@ -21,56 +21,56 @@
         <Preference
             android:key="statusbar_category"
             android:title="@string/statusbar_title"
-            android:fragment="com.streak.settings.fragments.StatusBarSettings" 
+            android:fragment="com.streak.settings.fragments.Statusbar" 
             android:icon="@drawable/ic_settings_statusbar"/>
 
         <!-- Quick Settings panel -->
         <Preference
             android:key="quicksettings_category"
             android:title="@string/quicksettings_title"
-            android:fragment="com.streak.settings.fragments.QuickSettings"
+            android:fragment="com.streak.settings.fragments.Quicksettings"
             android:icon="@drawable/ic_settings_quicksettings"/>
 
         <!-- Buttons -->
         <Preference
             android:key="buttonsettings_category"
             android:title="@string/buttons_title"
-            android:fragment="com.streak.settings.fragments.ButtonSettings"
+            android:fragment="com.streak.settings.fragments.Buttons"
             android:icon="@drawable/ic_settings_buttons"/>
 
         <!-- Gestures -->
         <Preference
             android:key="gestures_category"
             android:title="@string/gestures_title" 
-            android:fragment="com.streak.settings.fragments.GestureSettings"
+            android:fragment="com.streak.settings.fragments.Gesture"
             android:icon="@drawable/ic_settings_gesture"/>
 
         <!-- Lock Screen -->
         <Preference
             android:key="lockscreen_category"
             android:title="@string/lockscreen_title"
-            android:fragment="com.streak.settings.fragments.LockScreenSettings"
+            android:fragment="com.streak.settings.fragments.Lockscreen"
             android:icon="@drawable/ic_settings_lockscreens"/>
 
         <!-- Power Menu -->
         <Preference
             android:key="powermenu__category"
             android:title="@string/powermenu_title"
-            android:fragment="com.streak.settings.fragments.PowerMenuSettings"
+            android:fragment="com.streak.settings.fragments.Powermenu"
             android:icon="@drawable/ic_settings_powermenu"/>
 
         <!-- Notifications -->
         <Preference
             android:key="notifications_category"
             android:title="@string/notifications_title"
-            android:fragment="com.streak.settings.fragments.NotificationSettings"
+            android:fragment="com.streak.settings.fragments.Notification"
             android:icon="@drawable/ic_settings_notification"/>
 
         <!-- About -->
         <Preference
             android:key="about_category"
             android:title="@string/about_title"
-            android:fragment="com.streak.settings.fragments.AboutSettings"
+            android:fragment="com.streak.settings.fragments.About"
             android:icon="@drawable/ic_settings_about"/>
 
 </PreferenceScreen>

@@ -64,7 +64,7 @@ public class SystemSettingListPreference extends ListPreference {
     public void setValue(String value) {
         String mOldValue = getValue();
         super.setValue(value);
-        if (!value.equals(mOldValue)) {
+        if (mOldValue != null && !value.equals(mOldValue)) {
             notifyDependencyChange(shouldDisableDependents());
        }
     }
