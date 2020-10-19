@@ -19,6 +19,12 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <com.streak.settings.preferences.SystemSettingSwitchPreference
+        android:key="status_bar_brightness_control"
+        android:title="@string/status_bar_brightness_control_title"
+        android:summary="@string/status_bar_brightness_control_summary"
+        android:defaultValue="false"/>
+
+    <com.streak.settings.preferences.SystemSettingSwitchPreference
         android:key="double_tap_sleep_gesture"
         android:title="@string/double_tap_to_sleep_statusbar_title"
         android:summary="@string/double_tap_to_sleep_statusbar_summary"
