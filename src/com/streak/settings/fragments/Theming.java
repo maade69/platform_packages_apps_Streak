@@ -24,7 +24,7 @@ import android.view.View;
 import java.util.List;
 import java.util.ArrayList;
 
-public class Quicksettings extends SettingsPreferenceFragment implements
+public class Theming extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
 
@@ -32,7 +32,7 @@ public class Quicksettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-        addPreferencesFromResource(R.xml.streak_settings_quicksettings);
+        addPreferencesFromResource(R.xml.streak_settings_theming);
 
         PreferenceScreen prefScreen = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();

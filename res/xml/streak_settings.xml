@@ -24,11 +24,11 @@
             android:fragment="com.streak.settings.fragments.Statusbar" 
             android:icon="@drawable/ic_settings_statusbar"/>
 
-        <!-- Quick Settings panel -->
+        <!-- Theming panel -->
         <Preference
-            android:key="quicksettings_category"
-            android:title="@string/quicksettings_title"
-            android:fragment="com.streak.settings.fragments.Quicksettings"
+            android:key="theming_category"
+            android:title="@string/theming_title"
+            android:fragment="com.streak.settings.fragments.Theming"
             android:icon="@drawable/ic_settings_quicksettings"/>
 
         <!-- Buttons -->
