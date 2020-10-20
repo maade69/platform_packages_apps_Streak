@@ -18,6 +18,12 @@
     android:title="@string/lockscreen_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <com.streak.settings.preferences.SecureSettingSwitchPreference
+        android:key="lock_screen_transparent_notifications_enabled"
+        android:title="@string/transparent_lockscreen_notification_title"
+        android:summary="@string/transparent_lockscreen_notification_summary"
+        android:defaultValue="false" />
+
     <com.streak.settings.preferences.SystemSettingSwitchPreference
         android:key="lockscreen_battery_info"
         android:title="@string/lockscreen_battery_info_title"
