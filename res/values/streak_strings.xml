@@ -241,4 +241,8 @@
     <!-- Wakeup options -->
     <string name="wakeup_when_plugged_unplugged_title">Wake up on charge</string>
     <string name="wakeup_when_plugged_unplugged_summary">Wake up device if charger is plugged/unplugged.</string>
+
+    <!-- FOD animation -->
+    <string name="fod_recognizing_animation_title">Recognizing animation</string>
+    <string name="fod_recognizing_animation_summary">Show an animation while reading your fingerprint</string>
 </resources>

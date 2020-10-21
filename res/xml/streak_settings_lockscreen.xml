@@ -19,6 +19,12 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <com.streak.settings.preferences.SystemSettingSwitchPreference
+        android:key="fod_recognizing_animation"
+        android:title="@string/fod_recognizing_animation_title"
+        android:summary="@string/fod_recognizing_animation_summary"
+        android:defaultValue="true" />
+
+    <com.streak.settings.preferences.SystemSettingSwitchPreference
         android:key="fingerprint_error_vib"
         android:title="@string/fprint_error_vib_title"
         android:summary="@string/fprint_error_vib_summary"
