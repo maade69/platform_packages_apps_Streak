@@ -22,7 +22,7 @@
     <string name="powermenu_title">Power menu</string>
     <string name="theming_title">Theming</string>
     <string name="statusbar_title">Status bar</string>
-    <string name="notifications_title">Notifications</string>
+    <string name="notification_title">Notifications</string>
 
     <!-- About section -->
     <string name="links_category">Links</string>

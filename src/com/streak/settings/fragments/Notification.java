@@ -17,7 +17,7 @@ public class Notification extends SettingsPreferenceFragment {
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-        addPreferencesFromResource(R.xml.streak_settings_notifications);
+        addPreferencesFromResource(R.xml.streak_settings_notification);
     }
 
     @Override

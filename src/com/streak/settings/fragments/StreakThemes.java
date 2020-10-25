@@ -45,7 +45,7 @@ public class StreakThemes extends SettingsPreferenceFragment implements
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-        addPreferencesFromResource(R.xml.streak_themes);
+        addPreferencesFromResource(R.xml.streak_settings_theming);
         mOverlayService = IOverlayManager.Stub
                 .asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE));
         setupAccentPref();

@@ -18,10 +18,12 @@
     android:title="@string/theming_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <Preference
-         android:key="themes"
-         android:title="@string/themes_title"
-         android:summary="@string/themes_summary"
-         android:fragment="com.streak.settings.fragments.StreakThemes" />
+		<net.margaritov.preference.colorpicker.ColorPickerPreference
+			android:key="accent_color"
+			android:title="@string/accent_color"
+			android:summary="@string/accent_summary"
+			android:defaultValue="0xffffff"
+			android:persistent="false" 
+			android:fragment="com.streak.settings.fragments.StreakThemes"/>
 
 </PreferenceScreen>

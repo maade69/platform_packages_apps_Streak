@@ -46,7 +46,7 @@ import android.content.ComponentName;
 import com.google.android.material.card.MaterialCardView;
 
 import com.android.settings.R;
-import com.streak.settings.fragments.Theming;
+import com.streak.settings.fragments.StreakThemes;
 import com.streak.settings.fragments.Statusbar;
 import com.streak.settings.fragments.Lockscreen;
 import com.streak.settings.fragments.Powermenu;
@@ -60,7 +60,7 @@ import com.android.settings.SettingsPreferenceFragment;
 
 public class StreakSettings extends SettingsPreferenceFragment implements View.OnClickListener {
 
-    MaterialCardView mQuickSettingsCard;
+    MaterialCardView mThemingCard;
     MaterialCardView mStatusbarCard;
     MaterialCardView mLockscreenCard;
     MaterialCardView mPowerMenuCard;
@@ -80,8 +80,8 @@ public class StreakSettings extends SettingsPreferenceFragment implements View.O
         super.onViewCreated(view, savedInstanceState);
 		    getActivity().getActionBar().hide();
 
-        mQuickSettingsCard = (MaterialCardView) view.findViewById(R.id.quicksettings_card);
-        mQuickSettingsCard.setOnClickListener(this);
+        mThemingCard = (MaterialCardView) view.findViewById(R.id.theming_card);
+        mThemingCard.setOnClickListener(this);
 
         mStatusbarCard = (MaterialCardView) view.findViewById(R.id.statusbar_card);
         mStatusbarCard.setOnClickListener(this);
@@ -109,12 +109,12 @@ public class StreakSettings extends SettingsPreferenceFragment implements View.O
     @Override
     public void onClick(View view) {
         int id = view.getId();
-            if (id == R.id.quicksettings_card)
+            if (id == R.id.theming_card)
               {
-                Theming themingfragment = new Theming();
+                StreakThemes streakthemesfragment = new StreakThemes();
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
                 transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-                transaction.replace(this.getId(), themingfragment);
+                transaction.replace(this.getId(), streakthemesfragment);
                 transaction.addToBackStack(null);
                 transaction.commit();
                }
