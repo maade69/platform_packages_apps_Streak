@@ -27,6 +27,7 @@ import android.view.View;
 import com.android.settings.SettingsPreferenceFragment;
 import com.streak.settings.preferences.CustomSeekBarPreference;
 import com.streak.settings.preferences.SystemSettingSwitchPreference;
+import com.streak.settings.preferences.SystemSettingMasterSwitchPreference;
 import com.android.settings.Utils;
 import android.util.Log;
 
@@ -41,6 +42,9 @@ public class Statusbar extends SettingsPreferenceFragment implements
 
     private CustomSeekBarPreference mThreshold;
     private SystemSettingSwitchPreference mNetMonitor;
+    private static final String BRIGHTNESS_SLIDER = "qs_show_brightness";
+
+    private SystemSettingMasterSwitchPreference mBrightnessSlider;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -50,6 +54,13 @@ public class Statusbar extends SettingsPreferenceFragment implements
 
         PreferenceScreen prefSet = getPreferenceScreen();
         final ContentResolver resolver = getActivity().getContentResolver();
+
+        mBrightnessSlider = (SystemSettingMasterSwitchPreference)
+                findPreference(BRIGHTNESS_SLIDER);
+        mBrightnessSlider.setOnPreferenceChangeListener(this);
+        boolean enabled = Settings.System.getInt(resolver,
+                BRIGHTNESS_SLIDER, 1) == 1;
+        mBrightnessSlider.setChecked(enabled);
 
         boolean isNetMonitorEnabled = Settings.System.getIntForUser(resolver,
                 Settings.System.NETWORK_TRAFFIC_STATE, 1, UserHandle.USER_CURRENT) == 1;
@@ -67,7 +78,7 @@ public class Statusbar extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
-
+        final ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mNetMonitor) {
             boolean value = (Boolean) objValue;
             Settings.System.putIntForUser(getActivity().getContentResolver(),
@@ -81,6 +92,11 @@ public class Statusbar extends SettingsPreferenceFragment implements
             Settings.System.putIntForUser(getContentResolver(),
                     Settings.System.NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD, val,
                     UserHandle.USER_CURRENT);
+            return true;
+        } else if (preference == mBrightnessSlider) {
+            Boolean value = (Boolean) newValue;
+            Settings.System.putInt(resolver,
+                    BRIGHTNESS_SLIDER, value ? 1 : 0);
             return true;
         }
         return false;
