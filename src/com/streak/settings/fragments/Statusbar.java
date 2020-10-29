@@ -77,10 +77,10 @@ public class Statusbar extends SettingsPreferenceFragment implements
     }
 
     @Override
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
         final ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mNetMonitor) {
-            boolean value = (Boolean) objValue;
+            boolean value = (Boolean) newValue;
             Settings.System.putIntForUser(getActivity().getContentResolver(),
                     Settings.System.NETWORK_TRAFFIC_STATE, value ? 1 : 0,
                     UserHandle.USER_CURRENT);
@@ -88,7 +88,7 @@ public class Statusbar extends SettingsPreferenceFragment implements
             mThreshold.setEnabled(value);
             return true;
         } else if (preference == mThreshold) {
-            int val = (Integer) objValue;
+            int val = (Integer) newValue;
             Settings.System.putIntForUser(getContentResolver(),
                     Settings.System.NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD, val,
                     UserHandle.USER_CURRENT);

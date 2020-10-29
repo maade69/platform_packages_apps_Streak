@@ -255,4 +255,8 @@
     <string name="qs_show_brightness_above_footer_summary">Show bottom brightness slider above QS footer</string>
     <string name="qs_show_auto_brightness_title">Auto brightness icon</string>
     <string name="qs_show_auto_brightness_summary">Show an auto brightness toggle near the brightness slider</string>
+
+    <!-- SmartSpace -->
+    <string name="smart_space_title">SmartSpace</string>
+    <string name="smart_space_summary">Display conditional info such as weather and events on lockscreen\nRequires a SystemUI restart</string>
 </resources>
