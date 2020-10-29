@@ -71,12 +71,39 @@
                 android:data="https://t.me/Raaj52"/>
         </Preference>
 
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="contributors_category"
+        android:title="@string/contributors_category" >
+
         <Preference
             android:title="san9scurtu"
-            android:summary="Project Contributor">
+            android:summary="General Project Contributor">
             <intent
                 android:action="android.intent.action.VIEW"
                 android:data="https://t.me/san9scurtu"/>
+        </Preference>
+
+        <Preference
+            android:title="AnonHacker47/NVK"
+            android:summary="UI Creators">
+        </Preference>
+
+        <Preference
+            android:title="pinkcoder718"
+            android:summary="Designer">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/pinkcoder718"/>
+        </Preference>
+
+        <Preference
+            android:title="GK"
+            android:summary="Bootanimation Creator">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/CatGod_of_light"/>
         </Preference>
 
     </PreferenceCategory>
