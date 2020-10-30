@@ -53,24 +53,11 @@
         settings:min="0"
         settings:units="" />
 
-    <com.streak.settings.preferences.SystemSettingSwitchPreference
+    <com.streak.settings.preferences.SystemSettingMasterSwitchPreference
         android:key="qs_show_brightness"
         android:title="@string/qs_show_brightness_title"
         android:summary="@string/qs_show_brightness_summary"
         android:fragment="com.streak.settings.fragments.BrightnessSliderSettings"
         android:defaultValue="true" />
-
-    <com.streak.settings.preferences.SystemSettingSwitchPreference
-        android:key="qs_show_auto_brightness"
-        android:title="@string/qs_show_auto_brightness_title"
-        android:summary="@string/qs_show_auto_brightness_summary"
-        android:defaultValue="true" />
-
-    <com.streak.settings.preferences.SystemSettingSwitchPreference
-        android:key="qs_show_brightness_above_footer"
-        android:title="@string/qs_show_brightness_above_footer_title"
-        android:summary="@string/qs_show_brightness_above_footer_summary"
-        android:dependency="qs_brightness_position_bottom"
-        android:defaultValue="false" />
 
 </PreferenceScreen>
