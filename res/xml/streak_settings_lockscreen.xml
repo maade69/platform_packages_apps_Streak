@@ -22,7 +22,7 @@
         android:key="fod_recognizing_animation"
         android:title="@string/fod_recognizing_animation_title"
         android:summary="@string/fod_recognizing_animation_summary"
-        android:defaultValue="true" />
+        android:defaultValue="false" />
 
     <com.streak.settings.preferences.SystemSettingSwitchPreference
         android:key="fingerprint_error_vib"
