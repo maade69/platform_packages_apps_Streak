@@ -23,6 +23,12 @@
     <string name="theming_title">Theming</string>
     <string name="statusbar_title">Status bar</string>
     <string name="notification_title">Notifications</string>
+    <string name="gestures_category_header">Gestures</string>
+    <string name="fod_category_header">Fingerprint</string>
+    <string name="lockscreen_category_header">Lockscreen </string>
+    <string name="notification_category_header">Notifications</string>
+    <string name="network_category_header">Network</string>
+    <string name="brightness_category_header">Brightness</string>
 
     <!-- About section -->
     <string name="links_category">Links</string>

@@ -22,40 +22,45 @@
         android:key="incall_vib_options"
         android:title="@string/incall_vibration_category" >
 
-        <com.streak.settings.preferences.SystemSettingSwitchPreference
-            android:key="vibrate_on_connect"
-            android:title="@string/incall_vibrate_connect_title"
-            android:defaultValue="false" />
+       <com.streak.settings.preferences.SystemSettingSwitchPreference
+           android:key="vibrate_on_connect"
+           android:title="@string/incall_vibrate_connect_title"
+           android:defaultValue="false" />
 
-        <com.streak.settings.preferences.SystemSettingSwitchPreference
-            android:key="vibrate_on_callwaiting"
-            android:title="@string/incall_vibrate_call_wait_title"
-            android:defaultValue="false" />
+       <com.streak.settings.preferences.SystemSettingSwitchPreference
+           android:key="vibrate_on_callwaiting"
+           android:title="@string/incall_vibrate_call_wait_title"
+           android:defaultValue="false" />
 
-        <com.streak.settings.preferences.SystemSettingSwitchPreference
-            android:key="vibrate_on_disconnect"
-            android:title="@string/incall_vibrate_disconnect_title"
-            android:defaultValue="false" />
+       <com.streak.settings.preferences.SystemSettingSwitchPreference
+           android:key="vibrate_on_disconnect"
+           android:title="@string/incall_vibrate_disconnect_title"
+           android:defaultValue="false" />
 
     </PreferenceCategory>
 
-        <com.streak.settings.preferences.SystemSettingSwitchPreference
-            android:key="notification_guts_kill_app_button"
-            android:title="@string/notification_guts_kill_app_button_title"
-            android:summary="@string/notification_guts_kill_app_button_summary"
-            android:defaultValue="false" />
+    <PreferenceCategory
+        android:key="notification_category"
+        android:title="@string/notification_category_header" >
 
-	<com.streak.settings.preferences.SystemSettingSwitchPreference
+       <com.streak.settings.preferences.SystemSettingSwitchPreference
+           android:key="notification_guts_kill_app_button"
+           android:title="@string/notification_guts_kill_app_button_title"
+           android:summary="@string/notification_guts_kill_app_button_summary"
+           android:defaultValue="false" />
+
+       <com.streak.settings.preferences.SystemSettingSwitchPreference
            android:key="less_boring_heads_up"
            android:title="@string/less_boring_heads_up_title"
            android:summary="@string/less_boring_heads_up_summary"
            android:defaultValue="false" />
 
-    <!-- Heads up -->
-    <Preference
-        android:key="heads_up_notifications"
-        android:title="@string/heads_up_notifications"
-        android:summary="@string/heads_up_summary"
-        android:fragment="com.streak.settings.fragments.HeadsUpSettings" />
+        <Preference
+           android:key="heads_up_notifications"
+           android:title="@string/heads_up_notifications"
+           android:summary="@string/heads_up_summary"
+           android:fragment="com.streak.settings.fragments.HeadsUpSettings" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>

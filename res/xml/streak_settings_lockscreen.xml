@@ -18,40 +18,52 @@
     android:title="@string/lockscreen_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <com.streak.settings.preferences.SystemSettingSwitchPreference
-        android:key="fod_recognizing_animation"
-        android:title="@string/fod_recognizing_animation_title"
-        android:summary="@string/fod_recognizing_animation_summary"
-        android:defaultValue="false" />
+    <PreferenceCategory
+         android:key="fod_category"
+         android:title="@string/fod_category_header" >
 
-    <com.streak.settings.preferences.SystemSettingSwitchPreference
-        android:key="fingerprint_error_vib"
-        android:title="@string/fprint_error_vib_title"
-        android:summary="@string/fprint_error_vib_summary"
-        android:defaultValue="true" />
+        <com.streak.settings.preferences.SystemSettingSwitchPreference
+            android:key="fod_recognizing_animation"
+            android:title="@string/fod_recognizing_animation_title"
+            android:summary="@string/fod_recognizing_animation_summary"
+            android:defaultValue="false" />
 
-    <com.streak.settings.preferences.SecureSettingSwitchPreference
-        android:key="lock_screen_transparent_notifications_enabled"
-        android:title="@string/transparent_lockscreen_notification_title"
-        android:summary="@string/transparent_lockscreen_notification_summary"
-        android:defaultValue="false" />
+        <com.streak.settings.preferences.SystemSettingSwitchPreference
+            android:key="fingerprint_error_vib"
+            android:title="@string/fprint_error_vib_title"
+            android:summary="@string/fprint_error_vib_summary"
+            android:defaultValue="true" />
 
-    <com.streak.settings.preferences.GlobalSettingSwitchPreference
-        android:key="wake_when_plugged_or_unplugged"
-        android:title="@string/wakeup_when_plugged_unplugged_title"
-        android:summary="@string/wakeup_when_plugged_unplugged_summary"
-        android:defaultValue="true" />
+    </PreferenceCategory>
 
-    <com.streak.settings.preferences.SystemSettingSwitchPreference
-        android:key="lockscreen_battery_info"
-        android:title="@string/lockscreen_battery_info_title"
-        android:summary="@string/lockscreen_battery_info_summary"
-	android:defaultValue="true" />
+    <PreferenceCategory
+         android:key="lockscreen_category"
+         android:title="@string/lockscreen_category_header" >
 
-    <com.streak.settings.preferences.SystemSettingSwitchPreference
-        android:key="smart_space"
-        android:title="@string/smart_space_title"
-        android:summary="@string/smart_space_summary"
-        android:defaultValue="true" />
+        <com.streak.settings.preferences.SecureSettingSwitchPreference
+            android:key="lock_screen_transparent_notifications_enabled"
+            android:title="@string/transparent_lockscreen_notification_title"
+            android:summary="@string/transparent_lockscreen_notification_summary"
+            android:defaultValue="false" />
+
+        <com.streak.settings.preferences.GlobalSettingSwitchPreference
+            android:key="wake_when_plugged_or_unplugged"
+            android:title="@string/wakeup_when_plugged_unplugged_title"
+            android:summary="@string/wakeup_when_plugged_unplugged_summary"
+            android:defaultValue="true" />
+
+        <com.streak.settings.preferences.SystemSettingSwitchPreference
+            android:key="lockscreen_battery_info"
+            android:title="@string/lockscreen_battery_info_title"
+            android:summary="@string/lockscreen_battery_info_summary"
+            android:defaultValue="true" />
+
+        <com.streak.settings.preferences.SystemSettingSwitchPreference
+            android:key="smart_space"
+            android:title="@string/smart_space_title"
+            android:summary="@string/smart_space_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>

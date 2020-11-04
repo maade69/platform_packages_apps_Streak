@@ -18,46 +18,58 @@
     android:title="@string/statusbar_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <com.streak.settings.preferences.SystemSettingSwitchPreference 
-         android:key="show_volte_icon" 
-         android:title="@string/volte_icon_title" 
-         android:summary="@string/volte_icon_summary"
-         android:defaultValue="true"/>
+    <PreferenceCategory
+         android:key="network_category"
+         android:title="@string/network_category_header" >
 
-    <com.streak.settings.preferences.SystemSettingListPreference
-         android:key="volte_icon_style"
-         android:title="@string/volte_icon_style_title"
-         android:entries="@array/volte_icon_type_entries"
-         android:entryValues="@array/volte_icon_type_values"
-         android:dependency="show_volte_icon"
-         android:summary="%s"
-         android:defaultValue="0"/>
+        <com.streak.settings.preferences.SystemSettingSwitchPreference 
+             android:key="show_volte_icon" 
+             android:title="@string/volte_icon_title" 
+             android:summary="@string/volte_icon_summary"
+             android:defaultValue="true"/>
 
-    <com.streak.settings.preferences.SystemSettingListPreference
-         android:key="vowifi_icon"
-         android:title="@string/vowifi_icon_title"
-         android:entries="@array/vowifi_icon_entries"
-         android:entryValues="@array/vowifi_icon_values"
-         android:summary="%s"/>
+        <com.streak.settings.preferences.SystemSettingListPreference
+             android:key="volte_icon_style"
+             android:title="@string/volte_icon_style_title"
+             android:entries="@array/volte_icon_type_entries"
+             android:entryValues="@array/volte_icon_type_values"
+             android:dependency="show_volte_icon"
+             android:summary="%s"
+             android:defaultValue="0"/>
 
-    <com.streak.settings.preferences.SystemSettingSwitchPreference
-        android:key="network_traffic_state"
-        android:title="@string/network_traffic_state_title"
-        android:summary="@string/network_traffic_state_summary"
-        android:defaultValue="true" />
+        <com.streak.settings.preferences.SystemSettingListPreference
+             android:key="vowifi_icon"
+             android:title="@string/vowifi_icon_title"
+             android:entries="@array/vowifi_icon_entries"
+             android:entryValues="@array/vowifi_icon_values"
+             android:summary="%s"/>
 
-    <com.streak.settings.preferences.CustomSeekBarPreference
-        android:key="network_traffic_autohide_threshold"
-        android:title="@string/network_traffic_autohide_threshold_title"
-        android:max="10"
-        settings:min="0"
-        settings:units="" />
+        <com.streak.settings.preferences.SystemSettingSwitchPreference
+            android:key="network_traffic_state"
+            android:title="@string/network_traffic_state_title"
+            android:summary="@string/network_traffic_state_summary"
+            android:defaultValue="true" />
 
-    <com.streak.settings.preferences.SystemSettingMasterSwitchPreference
-        android:key="qs_show_brightness"
-        android:title="@string/qs_show_brightness_title"
-        android:summary="@string/qs_show_brightness_summary"
-        android:fragment="com.streak.settings.fragments.BrightnessSliderSettings"
-        android:defaultValue="true" />
+        <com.streak.settings.preferences.CustomSeekBarPreference
+            android:key="network_traffic_autohide_threshold"
+            android:title="@string/network_traffic_autohide_threshold_title"
+            android:max="10"
+            settings:min="0"
+            settings:units="" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+         android:key="brightness_category"
+         android:title="@string/brightness_category_header" >
+
+        <com.streak.settings.preferences.SystemSettingMasterSwitchPreference
+            android:key="qs_show_brightness"
+            android:title="@string/qs_show_brightness_title"
+            android:summary="@string/qs_show_brightness_summary"
+            android:fragment="com.streak.settings.fragments.BrightnessSliderSettings"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
