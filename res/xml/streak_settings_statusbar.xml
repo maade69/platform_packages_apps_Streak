@@ -71,5 +71,17 @@
             android:defaultValue="true" />
 
     </PreferenceCategory>
+	
+    <PreferenceCategory
+         android:key="batterystyles_category"
+         android:title="@string/batterystyles_category_header" >
+
+    <Preference
+       	android:key="statusbar_battery"
+        android:title="@string/battery_percent_title"
+        android:summary="@string/battery_percent_summary"
+        android:fragment="com.streak.settings.fragments.StatusBarBatterySettings"/>
+		
+    </PreferenceCategory>
 
 </PreferenceScreen>
