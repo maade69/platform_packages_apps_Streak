@@ -67,6 +67,14 @@
            android:title="@string/notification_headers_title"
            android:summary="@string/notification_headers_summary"
            android:defaultValue="true" />
+        
+        <!-- QS media player -->
+        <com.streak.settings.preferences.SystemSettingSwitchPreference
+        android:key="qs_media_player"
+        android:title="@string/qs_media_player_title"
+        android:summaryOn="@string/qs_media_player_summary_on"
+        android:summaryOff="@string/qs_media_player_summary_off"
+        android:defaultValue="true" />
 
     </PreferenceCategory>
 
