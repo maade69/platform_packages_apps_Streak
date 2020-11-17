@@ -81,13 +81,6 @@
         android:summary="@string/qs_bg_use_new_tint_summary"
         android:defaultValue="true" />
 
-        <com.streak.settings.preferences.SystemSettingMasterSwitchPreference
-            android:key="qs_show_brightness"
-            android:title="@string/qs_show_brightness_title"
-            android:summary="@string/qs_show_brightness_summary"
-            android:fragment="com.streak.settings.fragments.BrightnessSliderSettings"
-            android:defaultValue="true" />
-
     </PreferenceCategory>
 
 </PreferenceScreen>
