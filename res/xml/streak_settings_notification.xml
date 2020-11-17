@@ -62,6 +62,13 @@
            android:fragment="com.streak.settings.fragments.HeadsUpSettings" />
 
        <com.streak.settings.preferences.SystemSettingSwitchPreference
+           android:key="center_notification_headers"
+           android:title="@string/center_notification_headers_title"
+           android:summary="@string/center_notification_headers_summary"
+           android:dependency="notification_headers"
+           android:defaultValue="true" />
+
+       <com.streak.settings.preferences.SystemSettingSwitchPreference
            android:key="notification_headers"
            android:title="@string/notification_headers_title"
            android:summary="@string/notification_headers_summary"
