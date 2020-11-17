@@ -59,7 +59,7 @@
            android:key="heads_up_notifications"
            android:title="@string/heads_up_notifications"
            android:summary="@string/heads_up_summary"
-           android:fragment="com.streak.settings.fragments.HeadsUpSettings" />
+           android:fragment="com.streak.settings.fragments.HeadsUp" />
 
        <com.streak.settings.preferences.SystemSettingSwitchPreference
            android:key="center_notification_headers"
