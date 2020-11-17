@@ -289,4 +289,8 @@
     <!-- QS Panel Tint -->	
     <string name="qs_bg_use_new_tint">QS tile colors</string>
     <string name="qs_bg_use_new_tint_summary">Use accent color for qs tile icons and background</string>
+
+    <!-- Notification headers -->
+    <string name="notification_headers_title">Notification Headers</string>
+    <string name="notification_headers_summary">Show headers in the notification shade\nRequires a SystemUI restart</string>
 </resources>
