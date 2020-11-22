@@ -18,16 +18,28 @@ import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
 
 import android.provider.Settings;
+import com.android.internal.util.streak.fod.FodUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
 public class Lockscreen extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
+    private static final String FOD_ICON_PICKER_CATEGORY = "fod_icon_picker";
+
+    private PreferenceCategory mFODIconPickerCategory;
+
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.streak_settings_lockscreen);
+
+        PreferenceScreen prefScreen = getPreferenceScreen();
+
+        mFODIconPickerCategory = findPreference(FOD_ICON_PICKER_CATEGORY);
+        if (mFODIconPickerCategory != null && !FodUtils.hasFodSupport(getContext())) {
+            prefScreen.removePreference(mFODIconPickerCategory);
+        }
 
         ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
