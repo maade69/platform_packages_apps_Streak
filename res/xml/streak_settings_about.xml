@@ -86,10 +86,37 @@
         </Preference>
 
         <Preference
-            android:title="AnonHacker47/NVK"
-            android:summary="UI Creators">
+            android:title="AnonHacker47"
+            android:summary="UI Creator">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/AnonymousHacker_47"/>
         </Preference>
 
+        <Preference
+            android:title="NVK"
+            android:summary="UI Creator">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/chayagrahakan"/>
+        </Preference>
+	
+        <Preference
+            android:title="Ahmed Harhash"
+            android:summary="Designer">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/Lacentix"/>
+        </Preference>
+	
+        <Preference
+            android:title="GK"
+            android:summary="Designer">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/CatGod_of_light"/>
+        </Preference>	
+	
         <Preference
             android:title="pinkcoder718"
             android:summary="Designer">
@@ -98,17 +125,9 @@
                 android:data="https://t.me/pinkcoder718"/>
         </Preference>
 
-        <Preference
-            android:title="GK"
-            android:summary="Bootanimation Creator">
-            <intent
-                android:action="android.intent.action.VIEW"
-                android:data="https://t.me/CatGod_of_light"/>
-        </Preference>
-
     </PreferenceCategory>
 
-    <PreferenceCategory
+    <!-- PreferenceCategory
         android:key="maintainers_category"
         android:title="@string/maintainers_category" >
 
@@ -133,6 +152,6 @@
                 android:data="https://t.me/VladV1V"/>
         </Preference>
 
-    </PreferenceCategory>
+    </PreferenceCategory -->
 
 </PreferenceScreen>

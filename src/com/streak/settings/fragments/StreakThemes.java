@@ -42,16 +42,6 @@ public class StreakThemes extends SettingsPreferenceFragment implements
     private ColorPickerPreference mThemeColor;
 
     @Override
-    public void onCreate(Bundle icicle) {
-        super.onCreate(icicle);
-
-        addPreferencesFromResource(R.xml.streak_settings_theming);
-        mOverlayService = IOverlayManager.Stub
-                .asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE));
-        setupAccentPref();
-    }
-
-    @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         if (preference == mThemeColor) {
             int color = (Integer) objValue;
@@ -67,6 +57,16 @@ public class StreakThemes extends SettingsPreferenceFragment implements
         return true;
     }
 
+    @Override
+    public void onCreate(Bundle icicle) {
+        super.onCreate(icicle);
+
+        addPreferencesFromResource(R.xml.streak_settings_theming);
+        mOverlayService = IOverlayManager.Stub
+                .asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE));
+        setupAccentPref();
+    }
+
     private void setupAccentPref() {
         mThemeColor = (ColorPickerPreference) findPreference(ACCENT_COLOR);
         String colorVal = SystemProperties.get(ACCENT_COLOR_PROP, "-1");
@@ -75,6 +75,16 @@ public class StreakThemes extends SettingsPreferenceFragment implements
                 : Color.parseColor("#" + colorVal);
         mThemeColor.setNewPreviewColor(color);
         mThemeColor.setOnPreferenceChangeListener(this);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
     }
 
     @Override

@@ -21,6 +21,7 @@
     <string name="lockscreen_title">Lock screen</string>
     <string name="powermenu_title">Power menu</string>
     <string name="theming_title">Theming</string>
+    <string name="accent_category_header">System wide accent</string>
     <string name="statusbar_title">Status bar</string>
     <string name="notification_title">Notifications</string>
     <string name="gestures_category_header">Gestures</string>
@@ -136,7 +137,7 @@
     <string name="global_actions_max_columns_title">Max actions to show</string>
     <string name="global_actions_max_columns_summary">Set how many actions to show before buttons move to overflow menu</string>
 
-    <!-- RGG Accent Picker -->
+    <!-- RGB Accent Picker -->
     <string name="themes_title">Theming</string>
     <string name="themes_summary">Accent theming</string>
     <string name="accent_color">Accent picker</string>

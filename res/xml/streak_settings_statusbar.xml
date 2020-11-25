@@ -22,6 +22,19 @@
          android:key="network_category"
          android:title="@string/network_category_header" >
 
+        <com.streak.settings.preferences.SystemSettingSwitchPreference
+            android:key="network_traffic_state"
+            android:title="@string/network_traffic_state_title"
+            android:summary="@string/network_traffic_state_summary"
+            android:defaultValue="true" />
+
+        <com.streak.settings.preferences.CustomSeekBarPreference
+            android:key="network_traffic_autohide_threshold"
+            android:title="@string/network_traffic_autohide_threshold_title"
+            android:max="10"
+            settings:min="0"
+            settings:units="" />
+
         <com.streak.settings.preferences.SystemSettingSwitchPreference 
              android:key="show_volte_icon" 
              android:title="@string/volte_icon_title" 
@@ -43,19 +56,6 @@
              android:entries="@array/vowifi_icon_entries"
              android:entryValues="@array/vowifi_icon_values"
              android:summary="%s"/>
-
-        <com.streak.settings.preferences.SystemSettingSwitchPreference
-            android:key="network_traffic_state"
-            android:title="@string/network_traffic_state_title"
-            android:summary="@string/network_traffic_state_summary"
-            android:defaultValue="true" />
-
-        <com.streak.settings.preferences.CustomSeekBarPreference
-            android:key="network_traffic_autohide_threshold"
-            android:title="@string/network_traffic_autohide_threshold_title"
-            android:max="10"
-            settings:min="0"
-            settings:units="" />
 
     </PreferenceCategory>
 	

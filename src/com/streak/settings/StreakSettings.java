@@ -60,7 +60,7 @@ import com.android.settings.SettingsPreferenceFragment;
 
 public class StreakSettings extends SettingsPreferenceFragment implements View.OnClickListener {
 
-    MaterialCardView mThemingCard;
+    MaterialCardView mStreakThemesCard;
     MaterialCardView mStatusbarCard;
     MaterialCardView mLockscreenCard;
     MaterialCardView mPowerMenuCard;
@@ -80,8 +80,8 @@ public class StreakSettings extends SettingsPreferenceFragment implements View.O
         super.onViewCreated(view, savedInstanceState);
 		    getActivity().getActionBar().hide();
 
-        mThemingCard = (MaterialCardView) view.findViewById(R.id.theming_card);
-        mThemingCard.setOnClickListener(this);
+        mStreakThemesCard = (MaterialCardView) view.findViewById(R.id.streakthemes_card);
+        mStreakThemesCard.setOnClickListener(this);
 
         mStatusbarCard = (MaterialCardView) view.findViewById(R.id.statusbar_card);
         mStatusbarCard.setOnClickListener(this);
@@ -109,7 +109,7 @@ public class StreakSettings extends SettingsPreferenceFragment implements View.O
     @Override
     public void onClick(View view) {
         int id = view.getId();
-            if (id == R.id.theming_card)
+            if (id == R.id.streakthemes_card)
               {
                 StreakThemes streakthemesfragment = new StreakThemes();
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
